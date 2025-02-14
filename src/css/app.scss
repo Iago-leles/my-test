@@ -1,1 +1,53 @@
 // app global css in SCSS form
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --q-font-family: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: var(--q-font-family);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.q-card,
+.q-btn,
+.q-input,
+.q-select,
+.q-item {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.text-body1 {
+  font-weight: 400;
+}
+
+.text-caption {
+  font-weight: 300;
+}
