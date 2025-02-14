@@ -12,7 +12,8 @@
     "test": "jest",
     "dev": "quasar dev",
     "build": "quasar build",
-    "postinstall": "quasar prepare"
+    "postinstall": "quasar prepare",
+    "deploy": "vercel"
   },
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
