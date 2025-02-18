@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import HotelSearch from 'components/HotelSearch.vue'
-import HotelList from 'components/HotelList.vue'
-import HotelOrderFilter from 'components/HotelOrderFilter.vue'
+import HotelSearch from 'components/Hotel/Search.vue'
+import HotelList from 'components/Hotel/List.vue'
+import HotelOrderFilter from 'components/Hotel/OrderFilter.vue'
 </script>

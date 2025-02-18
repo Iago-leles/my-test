@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 import type { Hotel } from 'src/types'
 
-import hotelData from 'src/data/hotel.json'
+import hotelData from 'src/db/hotel.json'
 
 export const useHotelStore = defineStore('hotel', () => {
   const hotels = ref<Hotel[]>(hotelData.flatMap((data) => data.hotels) as Hotel[])

@@ -1,0 +1,9 @@
+{
+  "search": {
+    "title": "Reservar hotel",
+    "destination": "Destino",
+    "name": "Nome",
+    "button": "Buscar",
+    "button_alter": "Alterar busca"
+  }
+}

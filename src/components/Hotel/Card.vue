@@ -104,15 +104,15 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-import type { Hotel } from '../types'
+import type { Hotel } from '@/types'
 
-import { amenitiesIcons } from '../static/hotels'
+import { amenitiesIcons } from '@/static/hotels'
 
-import type { HotelAmenities } from 'src/enums/hotels'
-import { currencyFormatter } from 'src/utils/currency-format'
-import { useHotelStore } from 'src/stores/useHotelStore'
+import type { HotelAmenities } from '@/enums/hotels'
+import { currencyFormatter } from '@/utils/currency-format'
+import { useHotelStore } from '@/stores/useHotelStore'
 
-import AppCarousel from './AppCarousel.vue'
+import AppCarousel from '@/components/ui/AppCarousel.vue'
 
 const hotelStore = useHotelStore()
 

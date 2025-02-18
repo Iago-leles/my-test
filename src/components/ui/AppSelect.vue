@@ -11,14 +11,12 @@
       use-input
       hide-selected
       fill-input
-      dense
-      outlined
-      clearable
       input-debounce="0"
       :options="filteredOptions"
       @filter="filterFn"
       @update:model-value="$emit('update:modelValue', $event)"
       style="width: 100%; padding-bottom: 32px"
+      v-bind="$attrs"
     >
       <template v-slot:no-option>
         <q-item>

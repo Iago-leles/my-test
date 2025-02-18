@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 import type { Place } from 'src/types'
 
-import placesData from 'src/data/place.json'
+import placesData from 'src/db/place.json'
 
 export const usePlaceStore = defineStore('place', () => {
   const places = ref<Place[]>(placesData)

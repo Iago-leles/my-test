@@ -1,14 +1,20 @@
 import { defineConfig } from '#q-app/wrappers'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-export default defineConfig((/* ctx */) => {
+export default defineConfig(() => {
   return {
-    boot: [],
+    boot: ['i18n'],
     css: ['app.scss'],
     extras: ['roboto-font', 'material-icons'],
     build: {
       target: {
         browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
         node: 'node20',
+      },
+
+      alias: {
+        '@': path.resolve(__dirname, './src'),
       },
 
       typescript: {
@@ -30,6 +36,24 @@ export default defineConfig((/* ctx */) => {
           { server: false },
         ],
       ],
+
+      chainWebpack: (chain: any) => {
+        chain.module
+          .rule('i18n-resource')
+          .test(/\.(json5?|ya?ml)$/)
+          .include.add(fileURLToPath(new URL('./src/i18n', import.meta.url)))
+          .end()
+          .type('typescript/auto')
+          .use('i18n-resource')
+          .loader('@intlify/vue-i18n-loader')
+
+        chain.module
+          .rule('i18n')
+          .resourceQuery(/blockType=i18n/)
+          .type('typescript/auto')
+          .use('i18n')
+          .loader('@intlify/vue-i18n-loader')
+      },
     },
 
     devServer: {

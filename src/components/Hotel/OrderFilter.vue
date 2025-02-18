@@ -32,7 +32,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useHotelStore } from 'src/stores/useHotelStore'
+
+import { useHotelStore } from '@/stores/useHotelStore'
 
 const hotelStore = useHotelStore()
 

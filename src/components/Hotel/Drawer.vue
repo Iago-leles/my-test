@@ -82,18 +82,18 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type { Hotel } from 'src/types'
+import type { Hotel } from '@/types'
 
-import { useHotelStore } from 'src/stores/useHotelStore'
+import { useHotelStore } from '@/stores/useHotelStore'
 
-import AppCarousel from './AppCarousel.vue'
+import AppCarousel from '@/components/ui/AppCarousel.vue'
 
-import { amenitiesIcons } from 'src/static/hotels'
+import { amenitiesIcons } from '@/static/hotels'
 
-import type { HotelAmenities } from 'src/enums/hotels'
+import type { HotelAmenities } from '@/enums/hotels'
 
 const props = defineProps<{
-  hotel: Hotel | null
+  hotel?: Hotel | null
 }>()
 
 const hotelStore = useHotelStore()

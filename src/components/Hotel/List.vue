@@ -31,10 +31,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import { useHotelStore } from 'src/stores/useHotelStore'
+import { useHotelStore } from '@/stores/useHotelStore'
 
-import HotelCard from './HotelCard.vue'
-import HotelDrawer from './HotelDrawer.vue'
+import HotelCard from '@/components/Hotel/Card.vue'
+import HotelDrawer from '@/components/Hotel/Drawer.vue'
+
 const hotelStore = useHotelStore()
 
 const hasMoreHotels = computed(() => {
