@@ -19,7 +19,7 @@
         />
 
         <app-text-input
-          :model="name"
+          :model="hotelStore.filterName"
           :label="$t('hotels.search.name')"
           required
           dense
@@ -47,7 +47,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 
 import AppSelect from '@/components/ui/AppSelect.vue'
 import AppTextInput from '@/components/ui/AppTextInput.vue'
@@ -60,7 +60,6 @@ import { useI18n } from 'vue-i18n'
 const placeStore = usePlaceStore()
 const hotelStore = useHotelStore()
 
-const name = ref('')
 const { t } = useI18n()
 
 const buttonLabel = computed(() => {
@@ -69,13 +68,13 @@ const buttonLabel = computed(() => {
 
 const handleSearch = () => {
   if (!placeStore.selectedPlace) {
-    placeStore.hasSearched = false
+    placeStore.setHasSearched(false)
     hotelStore.setSelectedPlace(null)
 
     return
   }
 
-  placeStore.hasSearched = true
+  placeStore.setHasSearched(true)
   hotelStore.setSelectedPlace(placeStore.selectedPlace)
 }
 </script>

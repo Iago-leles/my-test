@@ -12,5 +12,22 @@
     "hotels": "Hotéis",
     "selected_hotel": "Hospedagem em {place}",
     "order_by": "Organizar por"
+  },
+
+  "list": {
+    "no_hotels": "Nenhum hotel encontrado para este destino."
+  },
+
+  "card": {
+    "stars": "Avaliações",
+    "price": "Preço",
+    "amenities": "Amenidades",
+    "refundable": "Reembolsável",
+    "view_details": "Ver detalhes",
+    "from": "A partir de",
+    "per_night": "{price}/por noite",
+    "taxes_included": "Impostos inclusos",
+    "currency": "R$",
+    "select": "Selecionar"
   }
 }

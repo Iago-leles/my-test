@@ -19,3 +19,8 @@ export enum HotelAmenities {
   STAGE = 'STAGE',
   SPA = 'SPA',
 }
+
+export enum HotelOrder {
+  RECOMMENDED = 'Recomendados',
+  BEST_RATED = 'Melhor avaliados',
+}

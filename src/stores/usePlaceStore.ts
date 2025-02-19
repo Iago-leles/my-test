@@ -29,18 +29,13 @@ export const usePlaceStore = defineStore('place', () => {
     hasSearched.value = value
   }
 
-  function resetSearch() {
-    hasSearched.value = false
-  }
-
   return {
-    places,
-    selectedPlace,
     hasSearched,
+    places,
     formattedPlaces,
+    selectedPlace,
     selectedPlaceData,
-    setSelectedPlace,
     setHasSearched,
-    resetSearch,
+    setSelectedPlace,
   }
 })

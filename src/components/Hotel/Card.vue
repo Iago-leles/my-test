@@ -62,7 +62,7 @@
               color="grey-7"
               class="q-px-md text-weight-medium q-mt-sm text-subtitle2"
             >
-              Reembolsável
+              {{ $t('hotels.card.refundable') }}
             </q-badge>
           </div>
 
@@ -71,26 +71,32 @@
             :class="{ 'mobile-price': $q.screen.lt.md }"
           >
             <div>
-              <div class="text-caption">A partir de:</div>
+              <div class="text-caption">{{ $t('hotels.card.from') }}</div>
 
               <div class="text-h6 text-weight-bold">
-                <span class="text-caption q-mb-none">R$</span>
+                <span class="text-caption q-mb-none">
+                  {{ $t('hotels.card.currency') }}
+                </span>
 
                 <span class="text-h4 q-mb-none">
                   {{ currencyFormatter(hotel.price) }}
                 </span>
               </div>
 
-              <p class="text-caption q-mb-none">{{ pricePerNight }}/por noite</p>
+              <p class="text-caption q-mb-none">
+                {{ $t('hotels.card.per_night', { price: pricePerNight }) }}
+              </p>
 
-              <div class="text-caption text-weight-medium">Impostos inclusos</div>
+              <div class="text-caption text-weight-medium">
+                {{ $t('hotels.card.taxes_included') }}
+              </div>
             </div>
 
             <q-btn
               color="blue"
               size="lg"
               no-caps
-              label="Selecionar"
+              :label="$t('hotels.card.select')"
               rounded
               class="q-mt-xl q-py-sm q-px-xl"
             />

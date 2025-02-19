@@ -21,7 +21,7 @@
 
     <template v-else-if="!hotelStore.isLoading">
       <div class="row justify-center text-grey-8 text-h5 q-mt-xl">
-        Nenhum hotel encontrado para este destino.
+        {{ $t('hotels.list.no_hotels') }}
       </div>
     </template>
 
@@ -45,6 +45,10 @@ const hasMoreHotels = computed(() => {
 </script>
 
 <style lang="scss">
+.hotel-drawer {
+  z-index: 2000;
+}
+
 .fullscreen-overlay {
   position: fixed;
   top: 0;
@@ -53,9 +57,5 @@ const hasMoreHotels = computed(() => {
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 1999;
-}
-
-.hotel-drawer {
-  z-index: 2000;
 }
 </style>
