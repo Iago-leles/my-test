@@ -1,4 +1,4 @@
-import hotels from './hotel.json'
+import hotels from './hotels.json'
 
 export default {
   hotels,

@@ -1,8 +1,9 @@
 <template>
-  <div class="hotel-list">
+  <div class="hotel-list" data-testid="hotel-list">
     <div
       v-if="hotelStore.selectedHotel"
       class="fullscreen-overlay"
+      data-testid="fullscreen-overlay"
       @click="hotelStore.setSelectedHotel(null)"
     />
 

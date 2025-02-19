@@ -5,5 +5,12 @@
     "name": "Nome",
     "button": "Buscar",
     "button_alter": "Alterar busca"
+  },
+
+  "breadcrumb": {
+    "home": "Início",
+    "hotels": "Hotéis",
+    "selected_hotel": "Hospedagem em {place}",
+    "order_by": "Organizar por"
   }
 }

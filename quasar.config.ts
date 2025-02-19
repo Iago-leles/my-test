@@ -13,10 +13,6 @@ export default defineConfig(() => {
         node: 'node20',
       },
 
-      alias: {
-        '@': path.resolve(__dirname, './src'),
-      },
-
       typescript: {
         strict: true,
         vueShim: true,
@@ -37,6 +33,10 @@ export default defineConfig(() => {
         ],
       ],
 
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
+
       chainWebpack: (chain: any) => {
         chain.module
           .rule('i18n-resource')
@@ -53,6 +53,14 @@ export default defineConfig(() => {
           .type('typescript/auto')
           .use('i18n')
           .loader('@intlify/vue-i18n-loader')
+      },
+    },
+
+    test: {
+      globals: true,
+      environment: 'happy-dom',
+      resolve: {
+        alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
       },
     },
 
