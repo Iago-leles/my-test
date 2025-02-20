@@ -22,6 +22,10 @@ export const useHotelStore = defineStore('hotel', () => {
     return hotelData
   })
 
+  function setFilterName(value: string) {
+    filterName.value = value
+  }
+
   const filteredHotels = computed(() => {
     let result = hotelData.flatMap((data) => data.hotels || []) as Hotel[]
 
@@ -74,6 +78,7 @@ export const useHotelStore = defineStore('hotel', () => {
     hotels,
     isLoading,
     filterName,
+    setFilterName,
     filteredHotels,
     displayedHotels,
     selectedPlace,

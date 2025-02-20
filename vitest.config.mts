@@ -10,6 +10,10 @@ export default defineConfig({
     environment: 'happy-dom',
     setupFiles: 'src/__tests__/setup-file.ts',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      include: ['src/components/**/*.{js,ts,vue}', 'src/pages/**/*.{js,ts,vue}'],
+    },
   },
 
   resolve: {

@@ -1,6 +1,8 @@
 <template>
   <q-card class="hotel-search" flat bordered>
-    <p class="text-h5 q-pa-sm q-ml-sm q-mb-none text-grey-8">{{ $t('hotels.search.title') }}</p>
+    <p class="text-h5 q-pa-sm q-ml-sm q-mb-none text-grey-8">
+      {{ $t('hotels.search.title') }}
+    </p>
 
     <q-separator color="grey-6" />
 
@@ -14,17 +16,18 @@
           clearable
           dense
           display-value
-          class="q-mb-md full-width"
+          class="full-width"
           :options="placeStore.formattedPlaces"
         />
 
         <app-text-input
-          :model="hotelStore.filterName"
+          v-model="hotelStore.filterName"
           :label="$t('hotels.search.name')"
           required
           dense
-          class="q-mb-md full-width"
+          class="full-width"
           outlined
+          debounce="400"
         />
       </div>
 
@@ -89,5 +92,13 @@ const handleSearch = () => {
   display: flex;
   gap: 1rem;
   width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 </style>

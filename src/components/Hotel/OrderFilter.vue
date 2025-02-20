@@ -1,5 +1,5 @@
 <template>
-  <div class="row items-center justify-between">
+  <div class="container">
     <q-breadcrumbs class="text-grey" active-color="blue">
       <template v-slot:separator>
         <q-icon size="1.4em" name="chevron_right" color="blue" />
@@ -51,5 +51,18 @@ const currentPlace = computed(() => hotelStore.selectedPlace?.label)
 .selected {
   font-weight: 700;
   font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 </style>

@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppCarousel > should match snapshot 1`] = `
+"<div data-v-813af4b2="" class="relative-position">
+  <div data-v-813af4b2="" class="q-carousel q-panel-parent q-carousel--without-padding q-carousel--arrows-horizontal carousel-card" style="height: 300px;">
+    <div class="q-carousel__slides-container">
+      <div class="q-panel scroll" style="--q-transition-duration: 300ms;" role="tabpanel">
+        <div data-v-813af4b2="" class="q-carousel__slide q-pa-none">
+          <div data-v-813af4b2="" class="q-img q-img--menu" style="height: 100%;" role="img">
+            <div style="padding-bottom: 56.24929688378895%;"></div>
+            <div class="q-img__container absolute-full"><img class="q-img__image q-img__image--with-transition q-img__image--current" style="object-fit: cover; object-position: 50% 50%;" loading="lazy" fetchpriority="auto" aria-hidden="true" draggable="false" src="image1.jpg"></div>
+            <transition-stub name="q-transition--fade" appear="false" persisted="false" css="true">
+              <div class="q-img__loading absolute-full flex flex-center"><svg class="q-spinner q-spinner-mat" width="1em" height="1em" viewBox="25 25 50 50">
+                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-miterlimit="10"></circle>
+                </svg></div>
+            </transition-stub>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="q-carousel__control q-carousel__arrow q-carousel__prev-arrow q-carousel__prev-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_left</i></span></button></div>
+    <div class="q-carousel__control q-carousel__arrow q-carousel__next-arrow q-carousel__next-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_right</i></span></button></div>
+  </div>
+  <!--v-if-->
+</div>"
+`;

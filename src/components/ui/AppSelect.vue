@@ -15,12 +15,14 @@
       :options="filteredOptions"
       @filter="filterFn"
       @update:model-value="$emit('update:modelValue', $event)"
-      style="width: 100%; padding-bottom: 32px"
+      style="width: 100%"
       v-bind="$attrs"
     >
       <template v-slot:no-option>
         <q-item>
-          <q-item-section class="text-grey"> Nenhum resultado encontrado </q-item-section>
+          <q-item-section class="text-grey">
+            {{ $t('ui.app_select.no_option') }}
+          </q-item-section>
         </q-item>
       </template>
     </q-select>

@@ -1,0 +1,40 @@
+{
+  "search": {
+    "title": "Book Hotel",
+    "destination": "Destination",
+    "name": "Name",
+    "button": "Search",
+    "button_alter": "Change search"
+  },
+
+  "breadcrumb": {
+    "home": "Home",
+    "hotels": "Hotels",
+    "selected_hotel": "Stay in {place}",
+    "order_by": "Sort by"
+  },
+
+  "list": {
+    "no_hotels": "No hotels found for this destination."
+  },
+
+  "card": {
+    "stars": "Ratings",
+    "price": "Price",
+    "amenities": "Amenities",
+    "refundable": "Refundable",
+    "view_details": "View details",
+    "from": "From",
+    "per_night": "{price}/per night",
+    "taxes_included": "Taxes included",
+    "currency": "$",
+    "select": "Select"
+  },
+
+  "drawer": {
+    "amenities": "Hotel facilities",
+    "know_more": "Learn more",
+    "more": "Show more",
+    "less": "Show less"
+  }
+}

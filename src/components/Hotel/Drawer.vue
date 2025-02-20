@@ -22,16 +22,22 @@
       </span>
 
       <div>
-        <p class="text-h5 text-grey-8 q-mb-none">{{ hotel?.name }}</p>
+        <p class="text-h5 text-grey-8 q-mb-none">
+          {{ hotel?.name }}
+        </p>
 
-        <p class="text-body2 text-grey-8">{{ hotel?.address.fullAddress }}</p>
+        <p class="text-body2 text-grey-8">
+          {{ hotel?.address.fullAddress }}
+        </p>
       </div>
 
       <app-carousel :images="hotel?.images || []" :autoplay="true" show-counter full-rounded />
 
       <div class="q-mt-md">
         <div v-if="shouldRenderAmenities">
-          <p class="text-h6 q-mb-xs text-grey-8 text-weight-light">Facilidades do hotel</p>
+          <p class="text-h6 q-mb-xs text-grey-8 text-weight-light">
+            {{ $t('hotels.drawer.amenities') }}
+          </p>
 
           <q-separator size="2px" />
 
@@ -48,7 +54,9 @@
               >
                 <q-icon :name="amenity?.icon" size="16px" class="q-mr-sm" />
 
-                <span class="text-subtitle2 text-weight-light">{{ amenity?.label }}</span>
+                <span class="text-subtitle2 text-weight-light">
+                  {{ amenity?.label }}
+                </span>
               </div>
             </div>
           </div>
@@ -63,14 +71,16 @@
             class="q-mb-md"
             @click="showAllAmenities = !showAllAmenities"
           >
-            {{ showAllAmenities ? 'Mostrar menos' : 'Mostrar todas as facilidades' }}
+            {{ showAllAmenities ? $t('hotels.drawer.less') : $t('hotels.drawer.more') }}
           </q-btn>
         </div>
 
         <q-separator size="2px" v-if="hotel?.description && shouldRenderAmenities" />
 
         <div class="q-mt-md" v-if="hotel?.description">
-          <p class="text-h6 q-mb-md text-weight-light">Conheça um pouco mais</p>
+          <p class="text-h6 q-mb-md text-weight-light">
+            {{ $t('hotels.drawer.know_more') }}
+          </p>
 
           <p class="text-body2 text-grey-8" v-html="hotel?.description" />
         </div>
@@ -122,18 +132,17 @@ const INITIAL_AMENITIES_COUNT = 3
 
 const displayedAmenities = computed(() => {
   if (!hotelAmenities.value) return []
+
   return showAllAmenities.value
     ? hotelAmenities.value
     : hotelAmenities.value.slice(0, INITIAL_AMENITIES_COUNT)
 })
 
-const hasMoreAmenities = computed(() => {
-  return hotelAmenities.value && hotelAmenities.value.length > INITIAL_AMENITIES_COUNT
-})
+const hasMoreAmenities = computed(
+  () => hotelAmenities.value && hotelAmenities.value.length > INITIAL_AMENITIES_COUNT,
+)
 
-const onHide = () => {
-  hotelStore.setSelectedHotel(null)
-}
+const onHide = () => hotelStore.setSelectedHotel(null)
 </script>
 
 <style lang="scss">

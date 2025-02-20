@@ -1,11 +1,16 @@
 <template>
-  <q-card class="hotel-card q-mb-md no-shadow" @click="handleClick">
+  <q-card class="hotel-card q-mb-md no-shadow">
     <div class="row" :class="{ 'flex-column': $q.screen.lt.md }">
       <div :class="$q.screen.lt.md ? 'col-12' : 'col-4'">
         <app-carousel :images="hotel.images" :autoplay="autoplay" />
       </div>
 
-      <div :class="$q.screen.lt.md ? 'col-12' : 'col-8'" class="q-pa-none q-h-100">
+      <div
+        :class="$q.screen.lt.md ? 'col-12' : 'col-8'"
+        class="q-pa-none q-h-100"
+        @click="handleClick"
+        data-testid="hotel-card"
+      >
         <div
           class="row justify-between content-wrapper"
           :class="{ 'flex-column': $q.screen.lt.md }"
@@ -47,6 +52,7 @@
                   color="transparent"
                   text-color="grey-8"
                   class="q-pa-xs"
+                  data-testid="hotel-amenity"
                 >
                   <q-icon :name="amenity?.icon" size="18px" />
 
@@ -71,7 +77,9 @@
             :class="{ 'mobile-price': $q.screen.lt.md }"
           >
             <div>
-              <div class="text-caption">{{ $t('hotels.card.from') }}</div>
+              <div class="text-caption">
+                {{ $t('hotels.card.from') }}
+              </div>
 
               <div class="text-h6 text-weight-bold">
                 <span class="text-caption q-mb-none">
@@ -79,7 +87,7 @@
                 </span>
 
                 <span class="text-h4 q-mb-none">
-                  {{ currencyFormatter(hotel.price) }}
+                  {{ hotel.price.toFixed(2).replace('.', ',') }}
                 </span>
               </div>
 
@@ -130,6 +138,7 @@ const autoplay = ref(true)
 const stars = computed(() => Number(props.hotel.stars))
 
 const handleClick = () => {
+  console.log('handleClick', props.hotel)
   hotelStore.setSelectedHotel(props.hotel)
 }
 

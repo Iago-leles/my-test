@@ -29,5 +29,12 @@
     "taxes_included": "Impostos inclusos",
     "currency": "R$",
     "select": "Selecionar"
+  },
+
+  "drawer": {
+    "amenities": "Facilidades do hotel",
+    "know_more": "Conheça um pouco mais",
+    "more": "Mostrar mais",
+    "less": "Mostrar menos"
   }
 }

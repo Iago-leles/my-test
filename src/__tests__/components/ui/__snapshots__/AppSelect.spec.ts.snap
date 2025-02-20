@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppSelect > should match snapshot 1`] = `
+"<div><span class="text-subtitle1 text-grey-6 text-weight-bold">Test Select <!--v-if--></span><label class="q-field row no-wrap items-start q-field--standard q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single" style="width: 100%;" for="f_5c8c637b-dca6-44fb-9d65-9f8102f08e6d">
+    <!---->
+    <div class="q-field__inner relative-position col self-stretch">
+      <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+        <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
+          <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="f_5c8c637b-dca6-44fb-9d65-9f8102f08e6d_lb" id="f_5c8c637b-dca6-44fb-9d65-9f8102f08e6d" value=""></div>
+          <!---->
+        </div>
+        <div class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"><i class="q-icon notranslate material-icons q-select__dropdown-icon" aria-hidden="true" role="presentation">arrow_drop_down</i></div>
+        <!---->
+      </div>
+      <!---->
+    </div>
+    <!---->
+  </label></div>"
+`;

@@ -6,13 +6,16 @@
       <span v-if="required" class="text-red-5">*</span>
     </span>
 
-    <q-input :model-value="model" v-bind="$attrs" />
+    <q-input v-model="model" v-bind="$attrs" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
+const model = ref('')
+
 defineProps<{
-  model: string
   label: string
   required: boolean
 }>()

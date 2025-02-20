@@ -3,15 +3,12 @@ import { Quasar } from 'quasar'
 import { vi, beforeEach } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
 
-// Configuração global para Vue Test Utils
 config.global.plugins = [Quasar]
 
-// Configuração do Pinia para testes
 beforeEach(() => {
   setActivePinia(createPinia())
 })
 
-// Mock global para window.matchMedia
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: vi.fn().mockImplementation((query) => ({
@@ -25,3 +22,7 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: vi.fn(),
   })),
 })
+
+config.global.mocks = {
+  $t: (key: string) => key,
+}

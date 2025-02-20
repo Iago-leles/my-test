@@ -1,0 +1,40 @@
+{
+  "search": {
+    "title": "Reservar Hotel",
+    "destination": "Destino",
+    "name": "Nombre",
+    "button": "Buscar",
+    "button_alter": "Modificar búsqueda"
+  },
+
+  "breadcrumb": {
+    "home": "Inicio",
+    "hotels": "Hoteles",
+    "selected_hotel": "Hospedarse en {place}",
+    "order_by": "Ordenar por"
+  },
+
+  "list": {
+    "no_hotels": "Ningún hotel encontrado para este destino."
+  },
+
+  "card": {
+    "stars": "Calificaciones",
+    "price": "Precio",
+    "amenities": "Comodidades",
+    "refundable": "Reembolsable",
+    "view_details": "Ver detalles",
+    "from": "Desde",
+    "per_night": "{price}/por noche",
+    "taxes_included": "Impuestos incluidos",
+    "currency": "€",
+    "select": "Seleccionar"
+  },
+
+  "drawer": {
+    "amenities": "Instalaciones del hotel",
+    "know_more": "Saber más",
+    "more": "Mostrar más",
+    "less": "Mostrar menos"
+  }
+}

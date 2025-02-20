@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelCard > should match snapshot 1`] = `
+"<div data-v-470e659a="" class="q-card hotel-card q-mb-md no-shadow">
+  <div data-v-470e659a="" class="row">
+    <div data-v-470e659a="" class="col-4">
+      <div data-v-813af4b2="" data-v-470e659a="" class="relative-position">
+        <div data-v-813af4b2="" class="q-carousel q-panel-parent q-carousel--without-padding q-carousel--arrows-horizontal carousel-card" style="height: 300px;">
+          <div class="q-carousel__slides-container"></div>
+          <div class="q-carousel__control q-carousel__arrow q-carousel__prev-arrow q-carousel__prev-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_left</i></span></button></div>
+          <div class="q-carousel__control q-carousel__arrow q-carousel__next-arrow q-carousel__next-arrow--horizontal absolute flex flex-center"><button class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense" tabindex="0" type="button" regular="true"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><i class="q-icon notranslate material-icons" aria-hidden="true" role="img">chevron_right</i></span></button></div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <div data-v-470e659a="" class="col-8 q-pa-none q-h-100" data-testid="hotel-card">
+      <div data-v-470e659a="" class="row justify-between content-wrapper">
+        <div data-v-470e659a="" class="q-pa-md hotel-info" style="max-width: 64%;">
+          <div data-v-470e659a="" class="text-h5 text-weight-medium text-grey-8 ellipsis">Hotel Test</div>
+          <div data-v-470e659a="" class="text-subtitle1 text-grey-8 ellipsis">123 Test St</div>
+          <div data-v-470e659a="" class="row q-gutter-sm items-center q-mt-md"><span data-v-470e659a="" class="row items-center q-mt-none"><div data-v-470e659a="" class="text-grey-6 q-mr-xs text-caption">4.5</div><div data-v-470e659a="" class="q-rating row inline items-center q-rating--non-editable text-amber" style="font-size: 1.2em;" role="radiogroup" aria-readonly="true"><div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 1"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-amber" aria-hidden="true" role="presentation">grade</i></div><div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 2"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-amber" aria-hidden="true" role="presentation">grade</i></div><div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 3"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-amber" aria-hidden="true" role="presentation">grade</i></div><div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 4"><i class="q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-amber" aria-hidden="true" role="presentation">grade</i></div><div class="q-rating__icon-container flex flex-center" role="radio" aria-checked="false" aria-label="grade 5"><i class="q-icon notranslate material-icons q-rating__icon text-amber" aria-hidden="true" role="presentation">grade</i></div></div></span>
+            <!--v-if-->
+            <!--v-if-->
+          </div>
+          <div data-v-470e659a="" class="q-badge flex inline items-center no-wrap q-badge--single-line bg-grey-7 q-px-md text-weight-medium q-mt-sm text-subtitle2" role="status">hotels.card.refundable</div>
+        </div>
+        <div data-v-470e659a="" class="text-left card-price text-grey-8">
+          <div data-v-470e659a="">
+            <div data-v-470e659a="" class="text-caption">hotels.card.from</div>
+            <div data-v-470e659a="" class="text-h6 text-weight-bold"><span data-v-470e659a="" class="text-caption q-mb-none">hotels.card.currency</span><span data-v-470e659a="" class="text-h4 q-mb-none">100,00</span></div>
+            <p data-v-470e659a="" class="text-caption q-mb-none">hotels.card.per_night</p>
+            <div data-v-470e659a="" class="text-caption text-weight-medium">hotels.card.taxes_included</div>
+          </div><button data-v-470e659a="" class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--rounded bg-blue text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-mt-xl q-py-sm q-px-xl" style="font-size: 20px;" tabindex="0" type="button"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span class="block">hotels.card.select</span></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

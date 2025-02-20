@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppTextInput > should match snapshot 1`] = `
+"<div><span class="text-subtitle1 text-grey-6 text-weight-bold">Test Input <!--v-if--></span><label class="q-field row no-wrap items-start q-field--standard q-input" for="f_598cbbff-b7c1-4d9b-abef-1d48a018bb92">
+    <!---->
+    <div class="q-field__inner relative-position col self-stretch">
+      <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+        <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" id="f_598cbbff-b7c1-4d9b-abef-1d48a018bb92" type="text" value="">
+          <!---->
+        </div>
+      </div>
+      <!---->
+    </div>
+    <!---->
+  </label></div>"
+`;

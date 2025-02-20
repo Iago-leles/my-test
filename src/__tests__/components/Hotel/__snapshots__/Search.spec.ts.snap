@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Search > should match snapshot 1`] = `
+"<div data-v-b2120978="" class="q-card q-card--bordered q-card--flat no-shadow hotel-search">
+  <p data-v-b2120978="" class="text-h5 q-pa-sm q-ml-sm q-mb-none text-grey-8">hotels.search.title</p>
+  <hr data-v-b2120978="" class="q-separator q-separator--horizontal bg-grey-6" aria-orientation="horizontal">
+  <div data-v-b2120978="" class="q-pa-md full-width column wrap items-end">
+    <div data-v-b2120978="" class="inputs">
+      <div data-v-b2120978="" outlined="" clearable="" dense="" display-value="" class="full-width"><span class="text-subtitle1 text-grey-6 text-weight-bold">hotels.search.destination <span class="text-red-5">*</span></span><label class="q-field row no-wrap items-start q-field--outlined q-select q-field--auto-height q-select--with-input q-select--without-chips q-select--single q-field--dense full-width" style="width: 100%;" for="f_2086f6f4-b19e-4313-9929-8041c89bfed4">
+          <!---->
+          <div class="q-field__inner relative-position col self-stretch">
+            <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+              <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip">
+                <div class="q-field__native row items-center"><input class="q-field__input q-placeholder col" type="search" tabindex="0" role="combobox" aria-readonly="false" aria-autocomplete="list" aria-expanded="false" aria-controls="f_2086f6f4-b19e-4313-9929-8041c89bfed4_lb" id="f_2086f6f4-b19e-4313-9929-8041c89bfed4" value=""></div>
+                <!---->
+              </div>
+              <div class="q-field__append q-field__marginal row no-wrap items-center q-anchor--skip"><i class="q-icon notranslate material-icons q-select__dropdown-icon" aria-hidden="true" role="presentation">arrow_drop_down</i></div>
+              <!---->
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </label></div>
+      <div data-v-b2120978="" modelvalue="" dense="" class="full-width" outlined="" debounce="400"><span class="text-subtitle1 text-grey-6 text-weight-bold">hotels.search.name <span class="text-red-5">*</span></span><label class="q-field row no-wrap items-start q-field--outlined q-input q-field--dense full-width" for="f_831729be-7ede-4b9d-af41-3d376fceaa2a">
+          <!---->
+          <div class="q-field__inner relative-position col self-stretch">
+            <div class="q-field__control relative-position row no-wrap" tabindex="-1">
+              <div class="q-field__control-container col relative-position row no-wrap q-anchor--skip"><input class="q-field__native q-placeholder" tabindex="0" id="f_831729be-7ede-4b9d-af41-3d376fceaa2a" type="text" value="">
+                <!---->
+              </div>
+            </div>
+            <!---->
+          </div>
+          <!---->
+        </label></div>
+    </div><button data-v-b2120978="" class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--rounded bg-blue text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-px-xl q-py-xs" style="font-size: 20px;" tabindex="0" type="button"><span class="q-focus-helper"></span><span class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span class="block">hotels.search.button</span></span>
+      <transition-stub name="q-transition--fade" appear="false" persisted="false" css="true">
+        <!---->
+      </transition-stub>
+    </button>
+  </div>
+  <transition-stub data-v-b2120978="" enterfromclass="q-transition--fade-enter-from" enteractiveclass="q-transition--fade-enter-active" entertoclass="q-transition--fade-enter-to" leavefromclass="q-transition--fade-leave-from" leaveactiveclass="q-transition--fade-leave-active" leavetoclass="q-transition--fade-leave-to" appear="true" persisted="false" css="true">
+    <!---->
+  </transition-stub>
+</div>"
+`;
