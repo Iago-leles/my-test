@@ -138,7 +138,6 @@ const autoplay = ref(true)
 const stars = computed(() => Number(props.hotel.stars))
 
 const handleClick = () => {
-  console.log('handleClick', props.hotel)
   hotelStore.setSelectedHotel(props.hotel)
 }
 
